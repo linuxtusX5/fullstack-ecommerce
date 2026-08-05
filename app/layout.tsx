@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { AuthSessionProvider } from "@/components/providers/SessionProvider";
 import { CartInitializer } from "@/components/cart/CartInitializer";
+import "./globals.css";
 
 export const metadata: Metadata = {
   title: "MyStore — Shop the Latest",
@@ -13,7 +14,7 @@ export default async function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html>
+    <html lang="en">
       <body>
         <AuthSessionProvider>
           {children}
