@@ -144,6 +144,7 @@ enum OrderStatus {
   DELIVERED
   CANCELLED
   REFUNDED
+  PAID
 }
 
 model ProductVariant {
