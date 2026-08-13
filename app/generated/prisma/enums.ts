@@ -24,7 +24,8 @@ export const OrderStatus = {
   SHIPPED: 'SHIPPED',
   DELIVERED: 'DELIVERED',
   CANCELLED: 'CANCELLED',
-  REFUNDED: 'REFUNDED'
+  REFUNDED: 'REFUNDED',
+  PAID: 'PAID'
 } as const
 
 export type OrderStatus = (typeof OrderStatus)[keyof typeof OrderStatus]
